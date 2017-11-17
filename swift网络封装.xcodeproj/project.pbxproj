@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		17B96D2B1FBB252400CAF11F /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B96D2C1FBB252400CAF11F /* SwiftyJSON.framework */; };
 		17B96D2D1FBBE0BC00CAF11F /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B96D2E1FBBE0BC00CAF11F /* ObjectMapper.framework */; };
-		17B96D301FBBE34600CAF11F /* XLJTestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B96D2F1FBBE34600CAF11F /* XLJTestModel.swift */; };
-		17B96D661FBC0B9500CAF11F /* ShopListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B96D651FBC0B9500CAF11F /* ShopListModel.swift */; };
 		17CC63201FB8439C00CFB9D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CC631F1FB8439C00CFB9D1 /* AppDelegate.swift */; };
 		17CC63251FB8439C00CFB9D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17CC63231FB8439C00CFB9D1 /* Main.storyboard */; };
 		17CC63271FB8439C00CFB9D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17CC63261FB8439C00CFB9D1 /* Assets.xcassets */; };
@@ -19,9 +17,10 @@
 		17CC63401FB8439D00CFB9D1 /* swift____UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CC633F1FB8439D00CFB9D1 /* swift____UITests.swift */; };
 		17CC637C1FB9840600CFB9D1 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17CC637D1FB9840600CFB9D1 /* Alamofire.framework */; };
 		17CC637E1FBA7E1300CFB9D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CC63211FB8439C00CFB9D1 /* ViewController.swift */; };
-		17CC63801FBA7E2A00CFB9D1 /* XLJNetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CC637F1FBA7E2A00CFB9D1 /* XLJNetworkTools.swift */; };
-		17CC63821FBAE6C800CFB9D1 /* XLJHttpTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CC63811FBAE6C800CFB9D1 /* XLJHttpTool.swift */; };
-		17CC63841FBAF5AA00CFB9D1 /* XLJModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CC63831FBAF5AA00CFB9D1 /* XLJModel.swift */; };
+		17FFD2F11FBEB36D007380A5 /* ShopListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FFD2ED1FBEB36D007380A5 /* ShopListModel.swift */; };
+		17FFD2F21FBEB36D007380A5 /* XLJModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FFD2EE1FBEB36D007380A5 /* XLJModel.swift */; };
+		17FFD2F31FBEB36D007380A5 /* XLJNetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FFD2F01FBEB36D007380A5 /* XLJNetworkTools.swift */; };
+		17FFD2F51FBEC568007380A5 /* NSDate-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FFD2F41FBEC568007380A5 /* NSDate-Extension.swift */; };
 		EA247118B66DA6CDC5B42967 /* Pods_swift____.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C4F6FC62D29D1B217BBCAB /* Pods_swift____.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,8 +45,6 @@
 		07C4F6FC62D29D1B217BBCAB /* Pods_swift____.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_swift____.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17B96D2C1FBB252400CAF11F /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		17B96D2E1FBBE0BC00CAF11F /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		17B96D2F1FBBE34600CAF11F /* XLJTestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XLJTestModel.swift; sourceTree = "<group>"; };
-		17B96D651FBC0B9500CAF11F /* ShopListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopListModel.swift; sourceTree = "<group>"; };
 		17CC631C1FB8439C00CFB9D1 /* swift网络封装.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift网络封装.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17CC631F1FB8439C00CFB9D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17CC63211FB8439C00CFB9D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,9 +59,10 @@
 		17CC633F1FB8439D00CFB9D1 /* swift____UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "swift____UITests.swift"; sourceTree = "<group>"; };
 		17CC63411FB8439D00CFB9D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17CC637D1FB9840600CFB9D1 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		17CC637F1FBA7E2A00CFB9D1 /* XLJNetworkTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XLJNetworkTools.swift; sourceTree = "<group>"; };
-		17CC63811FBAE6C800CFB9D1 /* XLJHttpTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XLJHttpTool.swift; sourceTree = "<group>"; };
-		17CC63831FBAF5AA00CFB9D1 /* XLJModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XLJModel.swift; sourceTree = "<group>"; };
+		17FFD2ED1FBEB36D007380A5 /* ShopListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopListModel.swift; sourceTree = "<group>"; };
+		17FFD2EE1FBEB36D007380A5 /* XLJModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XLJModel.swift; sourceTree = "<group>"; };
+		17FFD2F01FBEB36D007380A5 /* XLJNetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XLJNetworkTools.swift; sourceTree = "<group>"; };
+		17FFD2F41FBEC568007380A5 /* NSDate-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDate-Extension.swift"; sourceTree = "<group>"; };
 		4E6EF5D357DBD96E2489B233 /* Pods-swift网络封装.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift网络封装.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swift网络封装/Pods-swift网络封装.debug.xcconfig"; sourceTree = "<group>"; };
 		CA3E542702EF6EFFD376A407 /* Pods-swift网络封装.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift网络封装.release.xcconfig"; path = "Pods/Target Support Files/Pods-swift网络封装/Pods-swift网络封装.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -134,13 +132,9 @@
 		17CC631E1FB8439C00CFB9D1 /* swift网络封装 */ = {
 			isa = PBXGroup;
 			children = (
-				17B96D651FBC0B9500CAF11F /* ShopListModel.swift */,
+				17FFD2EA1FBEB36D007380A5 /* Classes */,
 				17CC631F1FB8439C00CFB9D1 /* AppDelegate.swift */,
 				17CC63211FB8439C00CFB9D1 /* ViewController.swift */,
-				17CC637F1FBA7E2A00CFB9D1 /* XLJNetworkTools.swift */,
-				17CC63811FBAE6C800CFB9D1 /* XLJHttpTool.swift */,
-				17CC63831FBAF5AA00CFB9D1 /* XLJModel.swift */,
-				17B96D2F1FBBE34600CAF11F /* XLJTestModel.swift */,
 				17CC63231FB8439C00CFB9D1 /* Main.storyboard */,
 				17CC63261FB8439C00CFB9D1 /* Assets.xcassets */,
 				17CC63281FB8439C00CFB9D1 /* LaunchScreen.storyboard */,
@@ -165,6 +159,41 @@
 				17CC63411FB8439D00CFB9D1 /* Info.plist */,
 			);
 			path = "swift网络封装UITests";
+			sourceTree = "<group>";
+		};
+		17FFD2EA1FBEB36D007380A5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				17FFD2EB1FBEB36D007380A5 /* 时间处理 */,
+				17FFD2EC1FBEB36D007380A5 /* 模型 */,
+				17FFD2EF1FBEB36D007380A5 /* 网络处理 */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		17FFD2EB1FBEB36D007380A5 /* 时间处理 */ = {
+			isa = PBXGroup;
+			children = (
+				17FFD2F41FBEC568007380A5 /* NSDate-Extension.swift */,
+			);
+			path = "时间处理";
+			sourceTree = "<group>";
+		};
+		17FFD2EC1FBEB36D007380A5 /* 模型 */ = {
+			isa = PBXGroup;
+			children = (
+				17FFD2ED1FBEB36D007380A5 /* ShopListModel.swift */,
+				17FFD2EE1FBEB36D007380A5 /* XLJModel.swift */,
+			);
+			path = "模型";
+			sourceTree = "<group>";
+		};
+		17FFD2EF1FBEB36D007380A5 /* 网络处理 */ = {
+			isa = PBXGroup;
+			children = (
+				17FFD2F01FBEB36D007380A5 /* XLJNetworkTools.swift */,
+			);
+			path = "网络处理";
 			sourceTree = "<group>";
 		};
 		5F28339AE04189900E8EFC89 /* Pods */ = {
@@ -362,13 +391,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17B96D301FBBE34600CAF11F /* XLJTestModel.swift in Sources */,
-				17B96D661FBC0B9500CAF11F /* ShopListModel.swift in Sources */,
-				17CC63821FBAE6C800CFB9D1 /* XLJHttpTool.swift in Sources */,
+				17FFD2F31FBEB36D007380A5 /* XLJNetworkTools.swift in Sources */,
+				17FFD2F21FBEB36D007380A5 /* XLJModel.swift in Sources */,
 				17CC637E1FBA7E1300CFB9D1 /* ViewController.swift in Sources */,
-				17CC63841FBAF5AA00CFB9D1 /* XLJModel.swift in Sources */,
 				17CC63201FB8439C00CFB9D1 /* AppDelegate.swift in Sources */,
-				17CC63801FBA7E2A00CFB9D1 /* XLJNetworkTools.swift in Sources */,
+				17FFD2F51FBEC568007380A5 /* NSDate-Extension.swift in Sources */,
+				17FFD2F11FBEB36D007380A5 /* ShopListModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

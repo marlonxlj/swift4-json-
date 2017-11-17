@@ -2,10 +2,11 @@
 //  ShopListModel.swift
 //  B2B
 //
-//  Created by cjs on 2017/7/11.
-//  Copyright © 2017年 lcnicky. All rights reserved.
+//  Created by xlj on 2017/7/11.
+//  Copyright © 2017年 marlonxlj. All rights reserved.
 //
-
+//  此模型为借鉴别人项目中的模型
+//
 import UIKit
 import SwiftyJSON
 import ObjectMapper

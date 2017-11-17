@@ -14,7 +14,6 @@ import ObjectMapper
 
 class ViewController: UIViewController {
     
-    var tool : XLJHttpTool = XLJHttpTool()
     //https://apple.com/item?id=1000
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,31 +22,60 @@ class ViewController: UIViewController {
         
     }
     
-    
+    enum TestType {
+        case networkType
+        case timeType
+    }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         do {
-            tool.loadData(callBack: { (respone) in
-                print("获取到的数据:\(respone)")
-            })
             
-            XLJNetworkTools.request.forGet(url: "http://onh8hmni9.bkt.clouddn.com/testGrap.json").success({ (respone) in
-
-                let model = Mapper<XLJModel>().map(JSON: respone as! [String : Any])
-                for item in (model?.roomphoto)!{
-//                    print("imte1:\(item.img1)")
-//                    print("imte2:\(item.img2)")
-//                    print("item3:\(item.img3)")
-                    
-                    let smod = Mapper<DetailRoomphotoModel>().map(JSONObject: item)
-                }
-            }).failure({ (error) in
-                print("error:\(String(describing: error))")
-            })
+            let test = TestType.timeType
             
+            switch test {
+            case .networkType:
+                network_test()
+            case .timeType:
+                date_test()
+            default:
+                print("2222")
+            }
         }
     }
 
+}
+
+//MARK: - 测试的相关函数
+extension ViewController {
+    
+    ///网络测试
+    private func network_test (){
+        
+        XLJNetworkTools.request.forGet(url: "http://onh8hmni9.bkt.clouddn.com/testGrap.json").success({ (respone) in
+            
+            let model = Mapper<XLJModel>().map(JSON: respone as! [String : Any])
+            
+            let json = JSON(respone!)["roomphoto"]
+            for item in json.arrayValue {
+                guard let detmail = Mapper<DetailRoomphotoModel>().map(JSONObject: item.rawValue) else {return}
+                
+                print("detail:\(detmail)")
+                
+            }
+        }).failure({ (error) in
+            print("error:\(String(describing: error))")
+        })
+
+    }
+
+    ///日期测试
+    private func date_test(){
+         let createdAtStr = "Fri Sep 16 13:10:20 +0800 2017"
+        
+        let creaTest = NSDate.createDateString(createdAtStr: createdAtStr)
+        
+        print(creaTest)
+    }
 }
 
 

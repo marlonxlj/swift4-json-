@@ -5,6 +5,8 @@
 //  Created by m on 2017/11/14.
 //  Copyright © 2017年 XLJ. All rights reserved.
 //
+// 此模型为本项目的模型，可相互参考
+//
 
 //address = "8\U53f7";
 //conseventid = 59;
